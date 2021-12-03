@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Omega</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Tux">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,440;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="icon">
+    <script src="https://kit.fontawesome.com/4dfd73f768.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--CABECERA-->
+    <header id="navegacion">
+        <h1>Pizza Omega</h1>
+        <nav>
+            <a href="#inicio"><i class="fas fa-home"></i><span>&nbspINICIO</span></a>
+            <a href="#menu"><i class="fas fa-pizza-slice"></i><span>&nbspMENU</span></a>
+            <a href="#sucursales"><i class="fas fa-utensils"></i><span>&nbspSUCURSALES</span></a>
+            <a href="#nosotros"><i class="fas fa-users"></i><span>&nbspNOSOTROS</span></a>
+            <a id="carrito" a href="carrito.html" title="Ordenar en Uber Eats"><i class="fas fa-shopping-cart"><span id="total"> $0</span></i></a>
+            <span id="indicador"></span>
+            
+        </nav>
+    </header>
+
+    <!--PORTADA-->
+    <section class="seccion" id="inicio">
+        <div>
+            <img src="images/slider-2.jpg" alt="pizza de pepperoni de pizza omega">
+        </div>
+        <h2>PIZZA DE PEPPERONI</h2>
+        <h3>GRANDE</h3>
+        <p>$109</p>
+        <button class="boton1"><span>ORDENAR</span></button>
+    </section>
+
+    <div id="logo">
+        <img src="images/logo.png" alt="logo de pizza omega">
+    </div>
+
+    <!--MENU-->
+    <main>
+        <section class="seccion" id="menu">
+            <article>
+                <h3>Pizza 1</h3>
+                <figure>
+                    <img src="images/pizza1.png" alt="pizza 1">
+                </figure>
+                <p>(hola, aqui, van, los, ingredientes, de, la, pizza)</p>
+                <form action="" class="opciones">
+                    <div class="tamaño">
+                        <input type="radio" name="tamaño" id="chica" value="chica" checked>
+                        <label for="chica">CH</label>
+                        <input type="radio" name="tamaño" id="mediana" value="mediana">
+                        <label for="mediana">MED</label>
+                        <input type="radio" name="tamaño" id="grande" value="grande">
+                        <label for="grande">GDE</label>
+                    </div>
+                    <div class="cantidad">
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+                <span class="precio">$154</span>
+               <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 2</h3>
+                <figure>
+                    <img src="images/pizza2.png" alt="pizza 2">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 3</h3>
+                <figure>
+                    <img src="images/pizza3.png" alt="pizza 3">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 4</h3>
+                <figure>
+                    <img src="images/pizza4.png" alt="pizza 4">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                            <option value="cinco">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option value="chica">CH</option>
+                            <option value="mediana">MED</option>
+                            <option value="grande" selected>GDE</option>
+                            <option value="extragrande">XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 5</h3>
+                <figure>
+                    <img src="images/pizza1.png" alt="pizza 5">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 6</h3>
+                <figure>
+                    <img src="images/pizza2.png" alt="pizza 6">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 7</h3>
+                <figure>
+                    <img src="images/pizza3.png" alt="pizza 7">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 8</h3>
+                <figure>
+                    <img src="images/pizza4.png" alt="pizza 8">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 9</h3>
+                <figure>
+                    <img src="images/pizza1.png" alt="pizza 9">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+               <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 10</h3>
+                <figure>
+                    <img src="images/pizza2.png" alt="pizza 10">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 11</h3>
+                <figure>
+                    <img src="images/pizza3.png" alt="pizza 11">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 12</h3>
+                <figure>
+                    <img src="images/pizza4.png" alt="pizza 12">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 13</h3>
+                <figure>
+                    <img src="images/pizza1.png" alt="pizza 13">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+            <article>
+                <h3>Pizza 14</h3>
+                <figure>
+                    <img src="images/pizza2.png" alt="pizza 14">
+                    <figcaption>(hola, aqui, van, los, ingredientes, de, la, pizza)</figcaption>
+                </figure>
+                <form action="" id="opciones">
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <select name="cantidad" id="cantidad">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamaño">Tamaño: &nbsp</label>
+                        <select name="tamaño" id="tamaño">
+                            <option>CH</option>
+                            <option>MED</option>
+                            <option selected>GDE</option>
+                            <option>XGDE</option>
+                        </select>                        
+                    </div>
+                </form>
+                <button class="boton"><span>ORDENAR</span></button>
+            </article>
+        </section>
+    </main>
+
+<!--SUCURSALES-->
+    <section class="seccion" id="sucursales">
+        <h2><i class="fas fa-utensils"></i>&nbspSUCURSALES</h2>
+        <section>
+            <div>
+                <h3>Taximetros</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73706.2614835005!2d-99.04021574800956!3d19.393763733249884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb72c2362643%3A0x77a39238f81e7b64!2sPizza%20Omega!5e0!3m2!1ses-419!2smx!4v1638066891609!5m2!1ses-419!2smx" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="fotos-sucursales">
+                    <img src="images/taximetros.jpg" alt="sucursal de pizza omega Taximetros">
+                </section>
+            </div>
+            <div>
+                <h3>Calle 7</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73706.2614835005!2d-99.04021574800956!3d19.393763733249884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc5f57b96f9b%3A0x47e0d643193e333!2sPizza%20Omega!5e0!3m2!1ses-419!2smx!4v1638066964706!5m2!1ses-419!2smx" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="fotos-sucursales">
+                    <img src="images/calle7.jpg" alt="sucursal de pizza omega Calle 7">
+                </section>
+            </div>
+            <div>
+                <h3>Santa Cruz</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135184.5725015445!2d-99.00731331550656!3d19.385700354663637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd614d09b775%3A0xb9ca9b748f0f45e5!2sPizza%20Omega!5e0!3m2!1ses-419!2smx!4v1638067032341!5m2!1ses-419!2smx" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="fotos-sucursales">
+                    <img src="images/santacruz.jpg" alt="sucursal de pizza omega santa cruz">
+                </section>
+            </div>
+            <div>
+                <h3>Xochimilco</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.8288120015339!2d-99.10154329765227!3d19.25492895070714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce015628f8652f%3A0xb149e144d2f03d50!2sAv%20Hermenegildo%20Galeana%2057%2C%20Xaltocan%2C%20Xochimilco%2C%2016090%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1638124422332!5m2!1ses-419!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="fotos-sucursales">
+                    <img src="images/xochimilco.jpg" alt="sucursal de pizza omega xochimilco">
+                </section>
+            </div>
+        </section>
+        
+    </section>
+
+<!--NOSOTROS-->
+    <article class="seccion" id="nosotros">
+        <h2>NOSOTROS</h2>
+            <h3>Calidad</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, neque, iste omnis repellat perspiciatis consectetur dolorum quas sit iure voluptatum qui id! Perspiciatis quia dignissimos corrupti amet cum iusto, id ipsam quasi iste odit quo commodi reiciendis, veniam voluptatem laborum minus tempore odio. Distinctio, tempore impedit? Ipsum pariatur beatae neque.</p>
+            <h3>Historia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit blanditiis, nihil ullam veniam natus nulla, voluptates aliquam vel repellat quod inventore animi deleniti mollitia laudantium, deserunt quam minus earum non corrupti debitis eveniet quaerat! Pariatur voluptatum voluptates velit eos quisquam nihil excepturi assumenda. Quis aliquam saepe non obcaecati, similique iste odio molestias cum atque fugiat, quos voluptatem, id quibusdam consequuntur consectetur ipsam impedit ad rem enim earum? Voluptate sed dolorum fugit velit aliquam fuga, aliquid nostrum voluptatem itaque. Vero sapiente a incidunt error. Accusamus maxime nulla asperiores aut repudiandae. Alias cum sit magnam voluptatum accusantium nesciunt odio, dolor fugit.</p>
+            <div>
+                <figure>
+                    <img src="images/pizzero-1980.jpg" alt="descripcion1">
+                    <figcaption>(pie de imagen)</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/pizzera.jpg" alt="descripcion2">
+                    <figcaption>(pie de imagen)</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sucursal.png" alt="descripcion3">
+                    <figcaption>(pie de imagen)</figcaption>
+                </figure>
+            </div>
+            <address>
+                <span>CONTACTANOS!</span>
+                <ul>
+                    <li>(informacion de contacto 1)</li>
+                    <li>(informacion de contacto 2)</li>
+                    <li>(informacion de contacto 3)</li>
+                </ul>
+            </address>
+    </article>
+
+<!--FOOTER-->
+    <footer>
+        <address>
+            <p>Sitio hecho por:  <a href="https://www.facebook.com/Tux7u7" title="Contactame!">Angel Tux</a></p>
+        </address>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
