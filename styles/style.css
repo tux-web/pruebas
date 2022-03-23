@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px auto;
+}
+
+form input {
+    margin-bottom: 15px;
+}
+
+form button {
+    margin: 5px;
+}
+
+#borrar {
+    border-color: rgb(160, 70, 70);
+}
+
+#calcular {
+    border-color: rgb(73, 148, 70);
+}
+
+ul {
+    width: 300px;
+    margin: auto;
+}
+
+ul li {
+    margin: 10px;
+}
